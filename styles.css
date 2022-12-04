@@ -15,7 +15,6 @@ img, picture, video, canvas, svg {
   
     /* Set a specific height */
     min-height: 800px; 
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
