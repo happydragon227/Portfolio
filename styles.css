@@ -14,7 +14,7 @@ img, picture, video, canvas, svg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("1.jpg");
   
     /* Set a specific height */
-    height: 500px; 
+    height: 588px; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -29,7 +29,7 @@ img, picture, video, canvas, svg {
 .header{
   color: white; 
   text-align: center; 
-  padding: 150px 0;
+  padding: 180px 0;
 }
 .projects{
   display: flex;
