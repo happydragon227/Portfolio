@@ -101,11 +101,11 @@ img, picture, video, canvas, svg {
   margin: 50px 250px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   .parallax {
-    height: 588px; 
+    height: 450px; 
   }
   .header{
-    padding: 100px 0;
+    padding: 90px 0;
   }
 }
