@@ -1,0 +1,188 @@
+
+<!-- I got how to create parallax from this website: -->
+<!-- https://www.w3schools.com/howto/howto_css_parallax.asp -->
+<!-- I got how to create glowing text from this website: -->
+<!-- https://www.w3schools.com/howto/howto_css_glowing_text.asp -->
+<!-- I got how to fade the image from this website: -->
+<!-- https://www.w3schools.com/howto/howto_css_image_overlay.asp -->
+<!-- I got how to blacken the background image from this website: -->
+<!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+<!-- I got how to create a card element from this website: -->
+<!-- https://www.w3schools.com/howto/howto_css_cards.asp -->
+<!-- I got how to zoom hover from this website: -->
+<!-- https://www.w3schools.com/howto/howto_css_zoom_hover.asp -->
+<!-- I got how to create a clickable link from this website: -->
+<!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced -->
+<!-- I got how to do the box shadow effects from this website: -->
+<!-- https://www.w3schools.com/css/css3_shadows_box.asp -->
+<!-- I got how to create a divider with text in the middle from this website: -->
+<!-- https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle -->
+<!-- I got how do create gradient color from this website: -->
+<!-- https://www.w3schools.com/css/css3_gradients.asp -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="styles.css" rel="stylesheet" />
+        <title>Final Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	</head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <div class="fixed-top"> 
+            <nav id="navbar-example2" class="navbar bg-light px-5 mb-3" style="padding:30px;" >
+                <!-- <h1 class="navbar-brand" href="#">Portfolio</h1> -->
+                <h1 class="glow" href="#">Portfolio</h1>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">MY PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">ABOUT ME</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+        <div>
+            <br>
+        </div>
+        
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0" style="padding: 0 !important;">
+            <!-- <div>
+                <img src="1.jpg" class="img-fluid" id="scrollspyHeading1">
+            </div> -->
+            <h1 id="header" style="color: white;">Hi ! </h1>
+            <h1 id="header1" style="color: white;">I'm a Master's student at <span style="color:rgb(0, 157, 255)">Brown</span>, </h1>
+            <h1 id="header2" style="color: white;">Majoring in <span style="color:rgb(0, 157, 255)">Computer Science</span>, </h1>
+            <h1 id="header3" style="color: white;">Interested in <span style="color:rgb(0, 157, 255)">Software Engineering</span></h1>
+            <div class="parallax" id="scrollspyHeading1"></div>
+            <div id="scrollspyHeading2">
+                <h4 class="glow"  style="font-size: 50px; text-align: center; margin: 50px 0 80px 0;">
+                    <br><br>
+                    <div style="margin: auto; width: 80%; height: 40px; border-bottom: 3px solid rgb(0, 157, 255); text-align: center; border-radius: 4px;">
+                        <span style="font-size: 40px; background-color: #f8f9fa; padding: 0 40px;">
+                            My Projects
+                        </span>
+                    </div>
+                </h4>
+    
+                <div class="projects">
+                    <div class="card" style="width: 45rem; height: 30rem; border-radius: 25px; border: 0;">
+                        <img src="food_delivery.jpg" class="image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <b>
+                                    <span style="color:#0d6efd">
+                                        Iterative Design
+                                    </span> 
+                                </b>
+                                (Group Project)
+                            </h5><br>
+                        </div>
+                        <div class="middle">
+                            <a href="chowdeck.html" class="btn btn-primary" style="padding: 20px 40px;">Chowdeck</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 45rem; height: 30rem; border-radius: 25px; border: 0;">
+                        <img src="coffee_house.jpg" class="image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <b>
+                                    <span style="color:#0d6efd">
+                                        Responsive Web Redesign
+                                    </span> 
+                                </b>
+                                (Individual Project)
+                            </h5><br>
+                        </div>
+                        <div class="middle">
+                            <a href="ceremony.html" class="btn btn-primary" style="padding: 20px 40px;">Ceremony Coffee house</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <div class="card" style="width: 45rem; height: 30rem; border-radius: 25px; border: 0;">
+                        <img src="bakery.jpg" class="image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <b>
+                                    <span style="color:#0d6efd">
+                                        React Development
+                                    </span> 
+                                </b>
+                                (Individual Project)
+                            </h5><br>
+                        </div>
+                        <div class="middle"> 
+                            <a href="bakery.html" class="btn btn-primary" style="padding: 20px 40px;">Bakery shop</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 45rem; height: 30rem; border-radius: 25px; border: 0;">
+                        <img src="coca_cola_machine.jpg" class="image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <b>
+                                    <span style="color:#0d6efd">
+                                        Personas & Storyboarding
+                                    </span> 
+                                </b>
+                                (Individual Project)
+                            </h5><br>
+                        </div>
+                        <div class="middle">
+                            <a href="soda.html" class="btn btn-primary" style="padding: 20px 40px;">Soda Fountain Machine</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="scrollspyHeading3">
+                <h4 class="glow"  style="font-size: 50px; text-align: center; margin: 50px 0 80px 0;">
+                    <br><br>
+                    <div style="margin: auto; width: 80%; height: 40px; border-bottom: 3px solid rgb(0, 157, 255); text-align: center; border-radius: 4px;">
+                        <span style="font-size: 40px; background-color: #f8f9fa; padding: 0 40px;">
+                            About Me
+                        </span>
+                    </div>
+                </h4>
+                <br><br>
+                <div id="grad">
+                    <div class="item">
+                        <br><br><br>
+                        Hello! 
+                        <br><br>
+                        I'm currently a Master's student at <span style="color:rgb(0, 157, 255)">Brown University</span> majoring in Computer Science. 
+                        Previously, I got my undergraduate degree from <span style="color:rgb(0, 157, 255)">University of California, Santa Cruz</span>, majoring 
+                        in Computer Science as well. I love programming because designing and writing computer programs lets me use my creativity and problem-solving 
+                        skills. I've gained a lot of practical experiences during college and graduate school. Therefore, I'm intimately familiar with several coding 
+                        languages including <span style="color:rgb(0, 157, 255)">Java</span>, <span style="color:rgb(0, 157, 255)">Python</span>, 
+                        <span style="color:rgb(0, 157, 255)">JavaScript</span>, <span style="color:rgb(0, 157, 255)">HTML</span>, 
+                        <span style="color:rgb(0, 157, 255)">CSS</span>, <span style="color:rgb(0, 157, 255)">SQL</span>, 
+                        <span style="color:rgb(0, 157, 255)">Git</span>, <span style="color:rgb(0, 157, 255)">Pytorch</span>, 
+                        <span style="color:rgb(0, 157, 255)">Tensorflow</span>. 
+                        <br><br>
+                        Outside of class, I've worked on two group projects during the summer vacation and published two papers about them. They are: 
+                        <span style="color:rgb(0, 157, 255)">Visualizing large-scale high-dimensional data via hierarchical embedding of KNN graphs</span>, and 
+                        <span style="color:rgb(0, 157, 255)">Facial expression recognition based on multi branch structure</span>. 
+                        <br><br>
+                        I've also learned a lot about clustered data processing, especially <span style="color:rgb(0, 157, 255)">Hadoop</span>, 
+                        <span style="color:rgb(0, 157, 255)">MapReduce</span>, <span style="color:rgb(0, 157, 255)">Hive</span>, 
+                        <span style="color:rgb(0, 157, 255)">ZooKeeper</span>, <span style="color:rgb(0, 157, 255)">Yarn</span>, 
+                        <span style="color:rgb(0, 157, 255)">HiveSQL</span>, and I was able to set up a workable 
+                        <span style="color:rgb(0, 157, 255)">Hadoop Cluster</span> on my own personal computer.
+                    </div>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+    </body>
+</html>
