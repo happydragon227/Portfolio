@@ -51,6 +51,14 @@ img, picture, video, canvas, svg {
     background-image: linear-gradient(180deg, #1a237e, #51589d);
     /* background-image: linear-gradient(180deg, #F0F0F0, #F0F0F0); */
   }
+  #grad3 {
+    /* text-align:center; */
+    height: 700px;
+    font-size: 20px;
+    color: #fff;
+    background-image: linear-gradient(180deg, #1a237e, #51589d);
+    /* background-image: linear-gradient(180deg, #F0F0F0, #F0F0F0); */
+  }
   .item{
     /* width: 500px; */
     margin: 0 200px;
